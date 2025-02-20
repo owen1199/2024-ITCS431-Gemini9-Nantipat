@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'  # 你可以改成 11 或 8
-          distribution: 'temurin'  # 采用 OpenJDK 发行版
+          distribution: 'temurin'  # 采用 OpenJDK 发行
 
       - name: Compile Java Code
         run: |
