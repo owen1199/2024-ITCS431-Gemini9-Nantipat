@@ -1,31 +1,33 @@
-name: Java CI
+name: Java CI  # Workflow name
 
 on:
   push:
     branches:
-      - Weixian
+      - Weixian  # 你的主分支是 Weixian，所以要监听它
+  pull_request:
+    branches:
+      - Weixian  # 监听 pull request 事件
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # 在 GitHub Ubuntu 服务器上运行
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        ref: ${{ github.event.pull_request.head.ref }}
-        fetch-depth: ${{ env.PR_FETCH_DEPTH }}
+      - name: Checkout GitHub Repository
+        uses: actions/checkout@v3  # 确保代码被拉取到 GitHub 服务器
 
-    - name: Set up JDK
-      uses: actions/setup-java@v1
-      with:
-        java-version: '11' # You can change this to the version you want
+      - name: Set Up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'  # 你可以改成 11 或 8
+          distribution: 'temurin'  # 采用 OpenJDK 发行版
 
-    - name: Compile Java
-      run: |
-        cd Nantipat/HolidayTravelVehicles 
-        javac -d . *.java
-      # Compile java file from directory
+      - name: Compile Java Code
         run: |
-          java -cp HolidayTravelVehicles Main  # Run Main.java
+          cd HolidayTravelVehicles  # 进入你的 Java 代码目录
+          javac -d . *.java  # 编译所有 Java 文件
 
+      - name: Run Java Application
+        run: |
+          cd HolidayTravelVehicles  # 进入 Java 代码目录
+          java Main  # 运行 Main.java
