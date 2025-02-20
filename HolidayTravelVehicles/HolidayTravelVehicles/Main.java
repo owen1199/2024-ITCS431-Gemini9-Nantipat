@@ -5,5 +5,4 @@ public class Main {
         Invoice invoice = new Invoice("INV1001", customer, vehicle, 55000.0);
 
         invoice.displayInvoice();
-    }  // <== 这里需要加上这个大括号，结束 main 方法和 Main 类
-}
+    }  // 
