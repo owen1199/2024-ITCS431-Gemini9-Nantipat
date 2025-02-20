@@ -32,7 +32,3 @@ jobs:
         run: |
           cd HolidayTravelVehicles/HolidayTravelVehicles  # 进入 Java 代码目录
           java Main  # 运行 Main.java
-
-        run: |
-          cd HolidayTravelVehicles  # 进入 Java 代码目录
-          java Main  # 运行 Main.java
