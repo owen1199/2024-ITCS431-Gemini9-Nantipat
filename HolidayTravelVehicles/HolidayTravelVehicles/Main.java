@@ -5,4 +5,5 @@ public class Main {
         Invoice invoice = new Invoice("INV1001", customer, vehicle, 55000.0);
 
         invoice.displayInvoice();
-    }  // 
+    } // ✅ 确保这个大括号存在
+} // ✅ 这个也是必须的
