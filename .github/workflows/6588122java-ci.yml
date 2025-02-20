@@ -1,0 +1,33 @@
+name: Java CI  # Workflow name
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+  pull_request:
+    branches:
+      - main  # Trigger on pull request to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Run on the latest Ubuntu server
+
+    steps:
+      - name: Checkout GitHub Repository
+        uses: actions/checkout@v3  # Ensures code is pulled to the GitHub server
+
+      - name: Set Up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'  # You can change to 11 or 8 if needed
+          distribution: 'temurin'  # Use the OpenJDK distribution
+
+      - name: Compile Java Code
+        run: |
+          javac HolidayTravelVehicles/*.java  # Compile all Java files
+
+      - name: Run Java Application
+        run: |
+          java -cp HolidayTravelVehicles Main  # Run Main.java
+
