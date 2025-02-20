@@ -11,11 +11,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Run on the latest Ubuntu server
+    runs-on: ubuntu-latest  # Use the latest Ubuntu server
 
     steps:
       - name: Checkout GitHub Repository
-        uses: actions/checkout@v3  # Ensures code is pulled to the GitHub server
+        uses: actions/checkout@v3  # Ensures code is pulled to GitHub server
 
       - name: Set Up JDK 17
         uses: actions/setup-java@v3
