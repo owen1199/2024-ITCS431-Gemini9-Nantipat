@@ -3,7 +3,7 @@ name: Java CI
 on:
   push:
     branches:
-      -Yotsapat
+      - Yotsapat
 
 jobs:
   build:
@@ -23,6 +23,7 @@ jobs:
 
     - name: Compile Java
       run: |
-        cd HolidayTravelVehicles
+        cd HolidayTravelVehicles 
         javac Main.java
         java Main
+      # Compile java file from directory
