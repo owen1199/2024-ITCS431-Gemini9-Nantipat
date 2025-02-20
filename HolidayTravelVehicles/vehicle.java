@@ -11,24 +11,7 @@ public class Vehicle {
         this.price = price;
     }
 
-    public String getBrand() {
-        return brand;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
     public void displayInfo() {
-        System.out.println("Vehicle Information:");
         System.out.println("Brand: " + brand);
         System.out.println("Model: " + model);
         System.out.println("Year: " + year);
