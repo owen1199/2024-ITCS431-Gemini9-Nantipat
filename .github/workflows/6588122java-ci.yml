@@ -3,28 +3,28 @@ name: Java CI  # Workflow name
 on:
   push:
     branches:
-      - Weixian  # 你的分支
+      - Weixian  
   pull_request:
     branches:
       - Weixian
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # 在 GitHub Ubuntu 服务器上运
+    runs-on: ubuntu-latest  
 
     steps:
       - name: Checkout GitHub Repository
-        uses: actions/checkout@v3  # 拉取代码到 GitHub 服务器
+        uses: actions/checkout@v3  
 
       - name: Set Up JDK 17
         uses: actions/setup-java@v3
         with:
-          java-version: '17'  # 你可以改成 11 或 8
-          distribution: 'temurin'  # 采用 OpenJDK 发行
+          java-version: '17'  
+          distribution: 'temurin'  
 
       - name: Compile Java Code
         run: |
-          ls -R  # 列出所有文件，确认路径
+          ls -R  # 
           cd HolidayTravelVehicles/HolidayTravelVehicles  # 进入你的 Java 代码目录
           javac -d . *.java  # 编译所有 Java 文件
 
