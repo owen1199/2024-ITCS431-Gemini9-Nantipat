@@ -3,7 +3,7 @@ name: Java CI
 on:
   push:
     branches:
-      - [Your Branch]
+      - Poottapol
 
 jobs:
   build:
