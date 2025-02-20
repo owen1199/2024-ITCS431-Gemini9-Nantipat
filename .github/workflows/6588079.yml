@@ -3,7 +3,7 @@ name: Java CI
 on:
   push:
     branches:
-      - Poottapol
+      - [Your Branch]
 
 jobs:
   build:
@@ -26,4 +26,3 @@ jobs:
         cd HolidayTravelVehicles
         javac Main.java
         java Main
-      # Compile java file from directory
