@@ -26,7 +26,7 @@ Faculty of Information and Communication Technology  Mahidol University
 |<p>**Stakeholders and Interests:** </p><p>- **System Users:** Need access to the system according to their privileges. </p><p>- **System Administrator:** Ensures only authorized users gain access. </p><p>- **Gemini System:** Maintains security and operational integrity. </p>||||
 |<p>**Brief Description:** </p><p>The use case describes the process by which users authenticate themselves into the Gemini system. Users enter their credentials, and the system verifies their identity before granting access to specific functionalities based on their role. </p>||||
 |<p>**Trigger:** </p><p>A user wants to access the system to perform their respective tasks. </p><p>**Type:** User-initiated </p>||||
-|<p>**Relationships:** </p><p>**Association: User Include: -  Extend: -  Generalization: -**  </p>||||
+|<p>**Relationships:** </p><p>**Association: User </p><p> Include: -  </p><p> Extend: -  </p><p> Generalization: -**  </p>||||
 
 
 
@@ -53,7 +53,7 @@ Faculty of Information and Communication Technology  Mahidol University
 |<p>**Stakeholders and Interests:** </p><p>- **Astronomer:** Needs to create a science plan for observations. </p><p>- **Science Observer:** Uses the plan to validate and transform it into an observing program. </p><p>- **Gemini System:** Ensures science plans are properly formatted and executable.** </p>||||
 |<p>**Brief Description:** </p><p>This use case describes the process where an astronomer creates a science plan by specifying observation targets, instruments, and settings. The plan must meet system constraints and is submitted for validation before execution.** </p>||||
 |<p>**Trigger:** </p><p>An astronomer wants to propose an observation by creating a science plan in the system. </p><p>**Type:** User-initiated </p>||||
-|<p>**Relationships:** </p><p>**Association:** Astronomer **Include: -** </p><p>**Extend: - Generalization: -**  </p>||||
+|<p>**Relationships:** </p><p>**Association:** Astronomer </p><p>**Include: -** </p><p>**Extend: - </p><p>Generalization: -**  </p>||||
 
 
 
@@ -113,7 +113,7 @@ Faculty of Information and Communication Technology  Mahidol University
 |<p>**Stakeholders and Interests:** </p><p>- **Astronomer:** Needs to access, analyze, and manage collected data. </p><p>- **Science Observer:** Ensures data integrity and assists with validation. </p><p>- **Gemini System:** Stores, organizes, and secures astronomical data for research and future access. </p>||||
 |<p>**Brief Description:** </p><p>This use case describes how an astronomer accesses, processes, validates, and organizes collected astronomical data after an observation session. The data must be securely stored and made available for further analysis.** </p>||||
 |<p>**Trigger:** </p><p>An astronomer wants to review, validate, or archive astronomical data after an observation session. </p><p>**Type:** User-initiated** </p>||||
-|<p>**Relationships:** </p><p>**Association: Science Observer Include: -** </p><p>**Extend: -** </p><p>**Generalization: -**  </p>||||
+|<p>**Relationships:** </p><p>**Association: Science Observer </p><p>Include: -** </p><p>**Extend: -** </p><p>**Generalization: -**  </p>||||
 
 
 
@@ -138,7 +138,7 @@ Faculty of Information and Communication Technology  Mahidol University
 |<p>**Stakeholders and Interests:** </p><p>- **Astronomer:** Needs to submit a completed science plan for validation and execution. </p><p>- **Science Observer:** Reviews and validates the plan before transforming it into an observing program. </p><p>- **Gemini System:** Ensures submitted plans meet scientific and operational requirements. </p>||||
 |<p>**Brief Description:** </p><p>This use case describes how an astronomer submits a completed science plan for validation and further processing. The system checks for completeness and sends the plan to the Science Observer for review. </p>||||
 |<p>**Trigger:** </p><p>An astronomer wants to finalize and submit a science plan for validation. </p><p>**Type:** User-initiated** </p>||||
-|<p>**Relationships:** </p><p>**Association:** Astronomer **Include: -**  </p><p>**Extend: -  Generalization: -**  </p>||||
+|<p>**Relationships:** </p><p>**Association:** Astronomer </p><p>**Include: -**  </p><p>**Extend: -  </p><p>Generalization: -**  </p>||||
 
 
 
@@ -165,7 +165,7 @@ Faculty of Information and Communication Technology  Mahidol University
 |<p>**Stakeholders and Interests:** </p><p>- **Science Observer**: Ensures the science plan meets scientific and technical requirements. </p><p>- **Astronomer**: Needs confirmation that the science plan is valid and executable. </p><p>- **Gemini System**: Maintains the integrity of submitted science plans and ensures compatibility with operational constraints.** </p>||||
 |<p>**Brief Description:** </p><p>This use case describes how a Science Observer reviews and validates a submitted science plan to ensure it meets observational constraints, instrument configurations, and scheduling feasibility before it is transformed into an observing program.** </p>||||
 |<p>**Trigger:** </p><p>A science plan is submitted and needs validation before execution. </p><p>**Type:** User-initiated </p>||||
-|<p>**Relationships:** </p><p>**Association:** Science Observer **Include: -**  </p><p>**Extend: -**  </p><p>**Generalization: -**  </p>||||
+|<p>**Relationships:** </p><p>**Association:** Science Observer </p><p>**Include: -**  </p><p>**Extend: -**  </p><p>**Generalization: -**  </p>||||
 
 
 
